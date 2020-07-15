@@ -1,0 +1,31 @@
+﻿.title{
+    margin: 0px auto;
+    margin-top:100px;
+    text-align: center;
+    width: 215px;
+    color: white;
+    background-color: black;
+    border: solid black 2px;
+}
+
+input[type="button"] {
+    background-color: slategray;
+    color: white;
+    width: 100%;
+}
+
+input[type="text"] {
+    background-color: gainsboro;
+    width: 95%;
+}
+
+table {
+    margin: 0px auto;
+    background-color: black;
+    border:solid black 2px;
+}
+
+body {
+    background-image: url(https://c.wallhere.com/photos/97/8c/abstract_Ae_Plexus-630175.jpg!d);
+    background-size:  cover;
+}

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        //Hàm screen
+        function scr(val) {
+            document.getElementById("result").value += val
+        }
+
+        //Hàm solve
+        function solve() {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        }
+        //Hàm clear
+        function clr() {
+            document.getElementById("result").value = ""
+        }
+    </script>
+    <title>Calculator on HTML</title>
+    <link rel=" stylesheet" type="text/css" href="CalculatorStyle.css"/>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <div class= title>Calculator Fx-1507</div>
+            <td colspan="3"><input type="text" id="result" /></td>
+            <td><input type="button" value="c" onclick="clr()" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="scr('1')" /> </td>
+            <td><input type="button" value="2" onclick="scr('2')" /> </td>
+            <td><input type="button" value="3" onclick="scr('3')" /> </td>
+            <td><input type="button" value="/" onclick="scr('/')" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="scr('4')" /> </td>
+            <td><input type="button" value="5" onclick="scr('5')" /> </td>
+            <td><input type="button" value="6" onclick="scr('6')" /> </td>
+            <td><input type="button" value="-" onclick="scr('-')" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="scr('7')" /> </td>
+            <td><input type="button" value="8" onclick="scr('8')" /> </td>
+            <td><input type="button" value="9" onclick="scr('9')" /> </td>
+            <td><input type="button" value="+" onclick="scr('+')" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="scr('.')" /> </td>
+            <td><input type="button" value="0" onclick="scr('0')" /> </td>
+            <td><input type="button" value="=" onclick="solve()" /> </td>
+            <td><input type="button" value="*" onclick="scr('*')" /> </td>
+        </tr>
+    </table>
+</body>
+</html>    
